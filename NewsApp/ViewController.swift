@@ -60,8 +60,9 @@ class ViewController: UIViewController, DataRequestDelegate, UIScrollViewDelegat
 //        self.navigationController?.navigationBarHidden = true
         self.navigationItem.title = "今日新闻"
 
-        //增加导航栏左侧按钮
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: nil)
+        //添加navigationBarButton 
+        //https://github.com/dekatotoro/SlideMenuControllerSwift 有相关用法
+        self.addLeftBarButtonWithImage(UIImage(named: "menu")!)
         
         //MJ进行下拉刷新
         self.tableView.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: "downRefresh")

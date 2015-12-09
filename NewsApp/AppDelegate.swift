@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SlideMenuControllerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,10 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window?.backgroundColor = UIColor.whiteColor()
-        self.window?.makeKeyAndVisible()
         //一定要在这里添加导航栏才可以实现Back功能
         let nav = UINavigationController(rootViewController: ViewController())
-        self.window?.rootViewController = nav
+        
+        let leftViewController = LeftViewController()
+        
+        let slideMenuController = SlideMenuController(mainViewController: nav, leftMenuViewController: leftViewController)
+        
+        self.window?.rootViewController = slideMenuController
+        self.window?.makeKeyAndVisible()
         //设置启动页面停留的时间
         NSThread.sleepForTimeInterval(1.0)
         return true

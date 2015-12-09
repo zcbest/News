@@ -40,6 +40,7 @@
 		F0D6E4141C127FC5006B2910 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D6E3FF1C127FC5006B2910 /* UIScrollView+MJExtension.m */; };
 		F0D6E4151C127FC5006B2910 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D6E4011C127FC5006B2910 /* UIScrollView+MJRefresh.m */; };
 		F0D6E4161C127FC5006B2910 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D6E4031C127FC5006B2910 /* UIView+MJExtension.m */; };
+		F0F0CCCA1C18409B0077678C /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F0CCC91C18409B0077678C /* LeftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		F0D6E4011C127FC5006B2910 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		F0D6E4021C127FC5006B2910 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		F0D6E4031C127FC5006B2910 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		F0F0CCC91C18409B0077678C /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			children = (
 				F04F71EB1C105296000E3DA3 /* ViewController.swift */,
 				F0D2E9B51C109DE00008E3D5 /* NewsListViewController.swift */,
+				F0F0CCC91C18409B0077678C /* LeftViewController.swift */,
 			);
 			name = "Controller(控制器)";
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				F0D6E40B1C127FC5006B2910 /* MJRefreshAutoStateFooter.m in Sources */,
 				F04F71EA1C105296000E3DA3 /* AppDelegate.swift in Sources */,
 				F0D6E4061C127FC5006B2910 /* MJRefreshComponent.m in Sources */,
+				F0F0CCCA1C18409B0077678C /* LeftViewController.swift in Sources */,
 				F0D6E4091C127FC5006B2910 /* MJRefreshAutoGifFooter.m in Sources */,
 				F0D6E4101C127FC5006B2910 /* MJRefreshNormalHeader.m in Sources */,
 				F0D6E4141C127FC5006B2910 /* UIScrollView+MJExtension.m in Sources */,

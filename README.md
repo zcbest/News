@@ -12,3 +12,5 @@
 -Step 4:集成三方库,MJRefresh用来刷新和加载,SDWebImage用来异步加载cell中的图片;
 
 -Step 5:头条新闻的循环滚动以及访问新闻详情.
+
+-Step 6:侧拉菜单的建立

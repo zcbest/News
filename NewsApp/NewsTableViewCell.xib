@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCell" rowHeight="83" id="KGk-i7-Jjw" customClass="NewsTableViewCell" customModule="NewsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="331" height="82.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysf-P0-elw">
+                        <rect key="frame" x="10" y="10" width="198" height="62.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vlf-9L-hH0">
+                        <rect key="frame" x="238" y="8" width="85" height="66.5"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vlf-9L-hH0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="2dD-0T-nU7"/>
+                    <constraint firstItem="vlf-9L-hH0" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="3ZD-fa-Jcd"/>
+                    <constraint firstItem="vlf-9L-hH0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="230" id="8MY-fK-88N"/>
+                    <constraint firstAttribute="bottom" secondItem="Ysf-P0-elw" secondAttribute="bottom" constant="10" id="EBv-a3-29b"/>
+                    <constraint firstItem="Ysf-P0-elw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="LbJ-CH-4S8"/>
+                    <constraint firstItem="vlf-9L-hH0" firstAttribute="leading" secondItem="Ysf-P0-elw" secondAttribute="trailing" constant="30" id="SIF-eM-yve"/>
+                    <constraint firstItem="Ysf-P0-elw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="iYQ-Cu-cW9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vlf-9L-hH0" secondAttribute="trailing" id="yBV-Bf-S1r"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headerImage" destination="vlf-9L-hH0" id="6zx-yI-XeB"/>
+                <outlet property="headerLabel" destination="Ysf-P0-elw" id="J2V-st-aLP"/>
+            </connections>
+            <point key="canvasLocation" x="253.5" y="306.5"/>
+        </tableViewCell>
+    </objects>
+</document>

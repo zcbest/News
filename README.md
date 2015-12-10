@@ -16,3 +16,5 @@ Step 1:界面布局TableView(HeadView以及TableViewCell),自定义TableViewCell
 -Step 6:侧拉菜单的建立以及相关实现.
 
 ![App部分功能如下](http://img.blog.csdn.net/20151210104240897)
+
+![App功能二](http://img.blog.csdn.net/20151210104732078)

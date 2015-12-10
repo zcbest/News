@@ -1,9 +1,9 @@
 # NewsApp
-仿知乎日报的简单新闻客户端
+> **仿知乎日报的简单新闻客户端**
 
 开发该App的步骤如下:
 
--Step 1:界面布局TableView(HeadView以及TableViewCell),自定义TableViewCell;
+Step 1:界面布局TableView(HeadView以及TableViewCell),自定义TableViewCell;
 
 -Step 2:通过Alamofire三方库进行Json解析,为Model赋值;同时在view初始化的时候添加TableHeader,即为头条新闻;
 
@@ -14,3 +14,5 @@
 -Step 5:头条新闻的循环滚动以及访问新闻详情;
 
 -Step 6:侧拉菜单的建立以及相关实现.
+
+![App部分功能如下](http://img.blog.csdn.net/20151210104240897)

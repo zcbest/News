@@ -1,28 +1,37 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E18D4DA6E3337816E8C887B1443471FD6FA631A4",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E18D4DA6E3337816E8C887B1443471FD6FA631A4+++84F349C",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "E18D4DA6E3337816E8C887B1443471FD6FA631A4" : 0
+    "E18D4DA6E3337816E8C887B1443471FD6FA631A4+++591AE7D" : 0,
+    "E18D4DA6E3337816E8C887B1443471FD6FA631A4+++84F349C" : 0,
+    "E18D4DA6E3337816E8C887B1443471FD6FA631A4+++2AF05CF" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4D04C55B-AE4D-460C-8D29-5CBEA7BB0E45",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "E18D4DA6E3337816E8C887B1443471FD6FA631A4" : ""
+    "E18D4DA6E3337816E8C887B1443471FD6FA631A4+++591AE7D" : "",
+    "E18D4DA6E3337816E8C887B1443471FD6FA631A4+++84F349C" : "NewsApp\/",
+    "E18D4DA6E3337816E8C887B1443471FD6FA631A4+++2AF05CF" : ""
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "NewsApp",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "NewsApp.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hnuzengchao\/News.git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E18D4DA6E3337816E8C887B1443471FD6FA631A4"
-    },
-    {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hnuzengchao\/NewsApp.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E18D4DA6E3337816E8C887B1443471FD6FA631A4"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E18D4DA6E3337816E8C887B1443471FD6FA631A4+++2AF05CF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hnuzengchao\/News.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E18D4DA6E3337816E8C887B1443471FD6FA631A4+++591AE7D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hnuzengchao\/News.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E18D4DA6E3337816E8C887B1443471FD6FA631A4+++84F349C"
     }
   ]
 }

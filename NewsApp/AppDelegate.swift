@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let leftViewController = LeftViewController()
         
         let slideMenuController = SlideMenuController(mainViewController: nav, leftMenuViewController: leftViewController)
+  
         
         self.window?.rootViewController = slideMenuController
         self.window?.makeKeyAndVisible()

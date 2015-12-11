@@ -13,6 +13,11 @@ class NewsCellModel: NSObject{
     var newsImageName: String!
     var newsTitle: String!
     
+    init(id: Int, newsTitle: String) {
+        self.id = id
+        self.newsTitle = newsTitle
+    }
+    
     init(id: Int,newsImageName: String, newsTitle: String) {
         self.id = id
         self.newsImageName = newsImageName

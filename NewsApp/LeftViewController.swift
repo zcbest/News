@@ -18,11 +18,13 @@ class LeftViewController: UITableViewController,ThemeDataRequstDelegate {
         //切记不能掉reloadData，否则要手动刷新
         self.tableView.reloadData()
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView = UITableView(frame: UIScreen.mainScreen().bounds, style: UITableViewStyle.Grouped)
         
+        self.view.backgroundColor = UIColor.grayColor()
         //被委托对象设置代理
         let request = DataRequest()
         request.delegate1 = self
@@ -63,6 +65,7 @@ class LeftViewController: UITableViewController,ThemeDataRequstDelegate {
             cell.accessoryType = UITableViewCellAccessoryType.DetailButton
 //            print(cell.textLabel?.text)
         }
+
         return cell
     }
 
@@ -72,7 +75,11 @@ class LeftViewController: UITableViewController,ThemeDataRequstDelegate {
             self.slideMenuController()?.closeLeft()
         }
         else{
-            let url = "http://news-at.zhihu.com/api/4/themes" + String(themedata[indexPath.row].id)
+            let newViewController = ThemeDataViewController()
+            newViewController.id = themedata[indexPath.row].id
+            newViewController.themeTitle = themedata[indexPath.row].name
+            let nav = UINavigationController(rootViewController: newViewController)
+            self.presentViewController(nav, animated: true, completion: nil)
         }
     }
     

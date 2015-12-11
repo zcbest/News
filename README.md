@@ -1,5 +1,5 @@
 # NewsApp
-> **仿知乎日报的简单新闻客户端**
+> **仿知乎日报的简单新闻客户端——适合Swift新手入门**
 
 开发该App的步骤如下:
 
@@ -13,6 +13,8 @@ Step 1:界面布局TableView(HeadView以及TableViewCell),自定义TableViewCell
 
 -Step 5:头条新闻的循环滚动以及访问新闻详情;
 
--Step 6:侧拉菜单的建立以及相关实现.
+-Step 6:引进侧栏菜单的三方库，建立菜单并进行菜单内容的填充和布局以及首页的跳转
 
-![App部分功能如下](http://img.blog.csdn.net/20151210104240897)   ![App功能二](http://img.blog.csdn.net/20151210104732078)
+-Step 7:侧栏菜单项的跳转返回以及解决侧栏菜单新闻详情cell的复用问题
+
+![App部分功能如下](http://img.blog.csdn.net/20151210104240897)   ![App功能二](http://img.blog.csdn.net/20151210104732078)   ![App功能三](http://img.blog.csdn.net/20151211162154407)

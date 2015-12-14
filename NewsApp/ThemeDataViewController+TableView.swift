@@ -52,6 +52,7 @@ extension ThemeDataViewController: UITableViewDataSource,UITableViewDelegate{
             }
             cell!.themeImageUrl.sd_setImageWithURL(NSURL(string: url))
             cell?.themeLabel.text = self.item[indexPath.row].newsTitle
+            cell?.selectionStyle = UITableViewCellSelectionStyle.None
             return cell!
         }
     }

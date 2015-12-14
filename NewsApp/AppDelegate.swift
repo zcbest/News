@@ -22,9 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let nav = UINavigationController(rootViewController: ViewController())
         
         let leftViewController = LeftViewController()
+        let rightViewController = AuthorInfoViewController()
         
-        let slideMenuController = SlideMenuController(mainViewController: nav, leftMenuViewController: leftViewController)
-  
+        let slideMenuController = SlideMenuController(mainViewController: nav, leftMenuViewController: leftViewController, rightMenuViewController: rightViewController)
         
         self.window?.rootViewController = slideMenuController
         self.window?.makeKeyAndVisible()

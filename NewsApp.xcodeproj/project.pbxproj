@@ -11,6 +11,8 @@
 		F00B4B471C1A861F006E589B /* ThemeDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00B4B451C1A861F006E589B /* ThemeDataTableViewCell.swift */; };
 		F00B4B481C1A861F006E589B /* ThemeDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F00B4B461C1A861F006E589B /* ThemeDataTableViewCell.xib */; };
 		F00B4B4A1C1AB77B006E589B /* ThemeDataViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00B4B491C1AB77B006E589B /* ThemeDataViewController+TableView.swift */; };
+		F00B4B4F1C1ACA4F006E589B /* AuthorInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00B4B4D1C1ACA4F006E589B /* AuthorInfoViewController.swift */; };
+		F00B4B501C1ACA4F006E589B /* AuthorInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F00B4B4E1C1ACA4F006E589B /* AuthorInfoViewController.xib */; };
 		F025E01B1C194F7F001C4B83 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F025E0191C194F7F001C4B83 /* LeftViewController.swift */; };
 		F025E0201C19619A001C4B83 /* SlideMenuThemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F025E01F1C19619A001C4B83 /* SlideMenuThemeModel.swift */; };
 		F025E0221C196671001C4B83 /* SlideMenuThemeDataRequestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F025E0211C196671001C4B83 /* SlideMenuThemeDataRequestDelegate.swift */; };
@@ -46,7 +48,6 @@
 		F0D6E4141C127FC5006B2910 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D6E3FF1C127FC5006B2910 /* UIScrollView+MJExtension.m */; };
 		F0D6E4151C127FC5006B2910 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D6E4011C127FC5006B2910 /* UIScrollView+MJRefresh.m */; };
 		F0D6E4161C127FC5006B2910 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D6E4031C127FC5006B2910 /* UIView+MJExtension.m */; };
-		F0F0CCCC1C18472A0077678C /* LeftViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F0CCCB1C18472A0077678C /* LeftViewController+TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,8 @@
 		F00B4B451C1A861F006E589B /* ThemeDataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeDataTableViewCell.swift; sourceTree = "<group>"; };
 		F00B4B461C1A861F006E589B /* ThemeDataTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThemeDataTableViewCell.xib; sourceTree = "<group>"; };
 		F00B4B491C1AB77B006E589B /* ThemeDataViewController+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeDataViewController+TableView.swift"; sourceTree = "<group>"; };
+		F00B4B4D1C1ACA4F006E589B /* AuthorInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorInfoViewController.swift; sourceTree = "<group>"; };
+		F00B4B4E1C1ACA4F006E589B /* AuthorInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthorInfoViewController.xib; sourceTree = "<group>"; };
 		F025E0191C194F7F001C4B83 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		F025E01F1C19619A001C4B83 /* SlideMenuThemeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuThemeModel.swift; sourceTree = "<group>"; };
 		F025E0211C196671001C4B83 /* SlideMenuThemeDataRequestDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuThemeDataRequestDelegate.swift; sourceTree = "<group>"; };
@@ -112,7 +115,6 @@
 		F0D6E4011C127FC5006B2910 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		F0D6E4021C127FC5006B2910 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		F0D6E4031C127FC5006B2910 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
-		F0F0CCCB1C18472A0077678C /* LeftViewController+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LeftViewController+TableView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,8 @@
 				F0D2E9B51C109DE00008E3D5 /* NewsListViewController.swift */,
 				F025E0191C194F7F001C4B83 /* LeftViewController.swift */,
 				F025E0231C197A0F001C4B83 /* ThemeDataViewController.swift */,
+				F00B4B4D1C1ACA4F006E589B /* AuthorInfoViewController.swift */,
+				F00B4B4E1C1ACA4F006E589B /* AuthorInfoViewController.xib */,
 			);
 			name = "Controller(控制器)";
 			sourceTree = "<group>";
@@ -186,7 +190,6 @@
 			isa = PBXGroup;
 			children = (
 				F0CA612F1C168A54002F1D50 /* ViewController+TableView.swift */,
-				F0F0CCCB1C18472A0077678C /* LeftViewController+TableView.swift */,
 				F00B4B491C1AB77B006E589B /* ThemeDataViewController+TableView.swift */,
 			);
 			name = "Extension(扩展)";
@@ -399,6 +402,7 @@
 				F08B18481C105DBA0060A071 /* NewsTableViewCell.xib in Resources */,
 				F00B4B481C1A861F006E589B /* ThemeDataTableViewCell.xib in Resources */,
 				F0D6E4121C127FC5006B2910 /* MJRefresh.bundle in Resources */,
+				F00B4B501C1ACA4F006E589B /* AuthorInfoViewController.xib in Resources */,
 				F04F71EF1C105296000E3DA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +475,7 @@
 				F0D6E4141C127FC5006B2910 /* UIScrollView+MJExtension.m in Sources */,
 				F0D6E40D1C127FC5006B2910 /* MJRefreshBackNormalFooter.m in Sources */,
 				F0D6E4131C127FC5006B2910 /* MJRefreshConst.m in Sources */,
+				F00B4B4F1C1ACA4F006E589B /* AuthorInfoViewController.swift in Sources */,
 				F0D6E40A1C127FC5006B2910 /* MJRefreshAutoNormalFooter.m in Sources */,
 				F0D6E40E1C127FC5006B2910 /* MJRefreshBackStateFooter.m in Sources */,
 				F08B18471C105DBA0060A071 /* NewsTableViewCell.swift in Sources */,
@@ -479,7 +484,6 @@
 				F0D2E9B11C10829B0008E3D5 /* NewsCellModel.swift in Sources */,
 				F0D6E4161C127FC5006B2910 /* UIView+MJExtension.m in Sources */,
 				F0D6E4081C127FC5006B2910 /* MJRefreshHeader.m in Sources */,
-				F0F0CCCC1C18472A0077678C /* LeftViewController+TableView.swift in Sources */,
 				F0D2E9B41C1090650008E3D5 /* NewsDataRequestDelegate.swift in Sources */,
 				F0D6E4111C127FC5006B2910 /* MJRefreshStateHeader.m in Sources */,
 				F0D6E4051C127FC5006B2910 /* MJRefreshBackFooter.m in Sources */,

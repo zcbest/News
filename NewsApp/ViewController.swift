@@ -63,38 +63,41 @@ class ViewController: UIViewController, DataRequestDelegate, UIScrollViewDelegat
         //添加navigationBarButton 
         //https://github.com/dekatotoro/SlideMenuControllerSwift 有相关用法
         self.addLeftBarButtonWithImage(UIImage(named: "menu")!)
-        
+        self.addRightBarButtonWithImage(UIImage(named:"people")!)
+            
         //MJ进行下拉刷新
-        self.tableView.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: "downRefresh")
+//        self.tableView.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: "downRefresh")
      
         //MJ上拉加载
-        self.tableView.mj_footer = MJRefreshAutoFooter(refreshingTarget: self, refreshingAction: "upRefresh")
+//        self.tableView.mj_footer = MJRefreshAutoFooter(refreshingTarget: self, refreshingAction: "upRefresh")
         
         self.view.addSubview(tableView)
         
         //定时器控制头条新闻进行跳转
         NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "AutoScroll", userInfo: nil, repeats: true)
-     
+        //iOS 8开始的自适应高度，可以不需要实现定义高度的方法
+//        self.tableView.rowHeight = UITableViewAutomaticDimension
+//        self.tableView.estimatedRowHeight = 120
     }
     /**
      Description:下拉刷新实现方法
      */
-    func downRefresh(){
-        self.tableView.mj_header.beginRefreshing()
-        request = DataRequest()
-        request.alamofireRequest(url)
-        self.tableView.reloadData()
-        self.tableView.mj_header.endRefreshing()
-    }
-    /**
-     Description:上拉加载实现方法
-     */
-    func upRefresh(){
-        self.tableView.mj_footer.beginRefreshing()
+//    func downRefresh(){
+//        self.tableView.mj_header.beginRefreshing()
+//        request = DataRequest()
+//        request.alamofireRequest(url)
 //        self.tableView.reloadData()
-        self.tableView.mj_footer.endRefreshing()
-        
-    }
+//        self.tableView.mj_header.endRefreshing()
+//    }
+//    /**
+//     Description:上拉加载实现方法
+//     */
+//    func upRefresh(){
+//        self.tableView.mj_footer.beginRefreshing()
+////        self.tableView.reloadData()
+//        self.tableView.mj_footer.endRefreshing()
+//        
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

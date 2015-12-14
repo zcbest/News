@@ -51,7 +51,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
 //        cell?.headerImage.layer.masksToBounds = true
         
         cell?.headerLabel.text = model.newsTitle
-        
+        cell?.selectionStyle = UITableViewCellSelectionStyle.None
         return cell!
     }
     

@@ -33,6 +33,9 @@ class ThemeDataViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "More", style: UIBarButtonItemStyle.Plain, target: self, action: "back")
         
         self.view.addSubview(tableView)
+        
+//        self.tableView.rowHeight = UITableViewAutomaticDimension
+//        self.tableView.estimatedRowHeight = 80
     }
 
     override func prefersStatusBarHidden() -> Bool {

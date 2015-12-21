@@ -1,6 +1,8 @@
 # NewsApp
 > **仿知乎日报的简单新闻客户端——适合Swift新手入门**
+
 开发过程详见[我的博客](http://blog.csdn.net/hnuzengchao )
+
 开发该App的步骤如下:
 
 -Step 1:界面布局TableView(HeadView以及TableViewCell),自定义TableViewCell;

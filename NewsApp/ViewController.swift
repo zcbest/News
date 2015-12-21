@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import MJRefresh
 import SDWebImage
 
 class ViewController: UIViewController, DataRequestDelegate, UIScrollViewDelegate{
@@ -27,7 +26,7 @@ class ViewController: UIViewController, DataRequestDelegate, UIScrollViewDelegat
     //最新新闻的url
     let url = "http://news-at.zhihu.com/api/4/news/latest"
     //下拉刷新控件
-//    var header = MJRefreshNormalHeader()
+    var header = MJRefreshNormalHeader()
     
     //实现协议DataRequestDelegate的方法
     func transforValue(item1: AnyObject) {
@@ -66,10 +65,10 @@ class ViewController: UIViewController, DataRequestDelegate, UIScrollViewDelegat
         self.addRightBarButtonWithImage(UIImage(named:"people")!)
             
         //MJ进行下拉刷新
-//        self.tableView.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: "downRefresh")
+        self.tableView.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: "downRefresh")
      
         //MJ上拉加载
-//        self.tableView.mj_footer = MJRefreshAutoFooter(refreshingTarget: self, refreshingAction: "upRefresh")
+        self.tableView.mj_footer = MJRefreshAutoFooter(refreshingTarget: self, refreshingAction: "upRefresh")
         
         self.view.addSubview(tableView)
         
@@ -82,22 +81,22 @@ class ViewController: UIViewController, DataRequestDelegate, UIScrollViewDelegat
     /**
      Description:下拉刷新实现方法
      */
-//    func downRefresh(){
-//        self.tableView.mj_header.beginRefreshing()
-//        request = DataRequest()
-//        request.alamofireRequest(url)
+    func downRefresh(){
+        self.tableView.mj_header.beginRefreshing()
+        request = DataRequest()
+        request.alamofireRequest(url)
+        self.tableView.reloadData()
+        self.tableView.mj_header.endRefreshing()
+    }
+    /**
+     Description:上拉加载实现方法
+     */
+    func upRefresh(){
+        self.tableView.mj_footer.beginRefreshing()
 //        self.tableView.reloadData()
-//        self.tableView.mj_header.endRefreshing()
-//    }
-//    /**
-//     Description:上拉加载实现方法
-//     */
-//    func upRefresh(){
-//        self.tableView.mj_footer.beginRefreshing()
-////        self.tableView.reloadData()
-//        self.tableView.mj_footer.endRefreshing()
-//        
-//    }
+        self.tableView.mj_footer.endRefreshing()
+        
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -64,6 +64,7 @@
 		F025E01F1C19619A001C4B83 /* SlideMenuThemeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuThemeModel.swift; sourceTree = "<group>"; };
 		F025E0211C196671001C4B83 /* SlideMenuThemeDataRequestDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuThemeDataRequestDelegate.swift; sourceTree = "<group>"; };
 		F025E0231C197A0F001C4B83 /* ThemeDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeDataViewController.swift; sourceTree = "<group>"; };
+		F02694771C27F0F2003D9EF1 /* NewsApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewsApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		F04F71E61C105296000E3DA3 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04F71E91C105296000E3DA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F04F71EB1C105296000E3DA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +173,7 @@
 				F04F71F21C105296000E3DA3 /* LaunchScreen.storyboard */,
 				F04F71F51C105296000E3DA3 /* Info.plist */,
 				F0D168251C115C79000DB58D /* Supporting Files */,
+				F02694771C27F0F2003D9EF1 /* NewsApp-Bridging-Header.h */,
 			);
 			path = NewsApp;
 			sourceTree = "<group>";
@@ -617,7 +619,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zengchao.NewsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NewsApp/NewsApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -634,7 +636,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zengchao.NewsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NewsApp/NewsApp-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MJRefresh
+//import MJRefresh
 import SDWebImage
 
 class ViewController: UIViewController, DataRequestDelegate, UIScrollViewDelegate{
@@ -27,7 +27,7 @@ class ViewController: UIViewController, DataRequestDelegate, UIScrollViewDelegat
     //最新新闻的url
     let url = "http://news-at.zhihu.com/api/4/news/latest"
     //下拉刷新控件
-    var header = MJRefreshNormalHeader()
+//    var header = MJRefreshNormalHeader()
     
     //实现协议DataRequestDelegate的方法
     func transforValue(item1: AnyObject) {
@@ -74,7 +74,7 @@ class ViewController: UIViewController, DataRequestDelegate, UIScrollViewDelegat
         self.view.addSubview(tableView)
         
         //定时器控制头条新闻进行跳转
-        NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "AutoScroll", userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: "AutoScroll", userInfo: nil, repeats: true)
         //iOS 8开始的自适应高度，可以不需要实现定义高度的方法
 //        self.tableView.rowHeight = UITableViewAutomaticDimension
 //        self.tableView.estimatedRowHeight = 120

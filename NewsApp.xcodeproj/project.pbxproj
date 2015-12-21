@@ -24,6 +24,7 @@
 		F04F71F41C105296000E3DA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F04F71F21C105296000E3DA3 /* LaunchScreen.storyboard */; };
 		F08B18471C105DBA0060A071 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B18451C105DBA0060A071 /* NewsTableViewCell.swift */; };
 		F08B18481C105DBA0060A071 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08B18461C105DBA0060A071 /* NewsTableViewCell.xib */; };
+		F0B51CF61C23CA7100729995 /* IMG_1668.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F0B51CF51C23CA7100729995 /* IMG_1668.jpg */; };
 		F0CA61301C168A54002F1D50 /* ViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA612F1C168A54002F1D50 /* ViewController+TableView.swift */; };
 		F0D2E9AE1C1082470008E3D5 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2E9AD1C1082470008E3D5 /* DataRequest.swift */; };
 		F0D2E9B11C10829B0008E3D5 /* NewsCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2E9B01C10829B0008E3D5 /* NewsCellModel.swift */; };
@@ -72,6 +73,7 @@
 		F04F71F51C105296000E3DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F08B18451C105DBA0060A071 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		F08B18461C105DBA0060A071 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		F0B51CF51C23CA7100729995 /* IMG_1668.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1668.jpg; sourceTree = "<group>"; };
 		F0CA612F1C168A54002F1D50 /* ViewController+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+TableView.swift"; sourceTree = "<group>"; };
 		F0D2E9AD1C1082470008E3D5 /* DataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		F0D2E9B01C10829B0008E3D5 /* NewsCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCellModel.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				F04F71E91C105296000E3DA3 /* AppDelegate.swift */,
 				F04F71ED1C105296000E3DA3 /* Main.storyboard */,
 				F04F71F01C105296000E3DA3 /* Assets.xcassets */,
+				F0B51CF51C23CA7100729995 /* IMG_1668.jpg */,
 				F04F71F21C105296000E3DA3 /* LaunchScreen.storyboard */,
 				F04F71F51C105296000E3DA3 /* Info.plist */,
 				F0D168251C115C79000DB58D /* Supporting Files */,
@@ -401,6 +404,7 @@
 				F04F71F11C105296000E3DA3 /* Assets.xcassets in Resources */,
 				F08B18481C105DBA0060A071 /* NewsTableViewCell.xib in Resources */,
 				F00B4B481C1A861F006E589B /* ThemeDataTableViewCell.xib in Resources */,
+				F0B51CF61C23CA7100729995 /* IMG_1668.jpg in Resources */,
 				F0D6E4121C127FC5006B2910 /* MJRefresh.bundle in Resources */,
 				F00B4B501C1ACA4F006E589B /* AuthorInfoViewController.xib in Resources */,
 				F04F71EF1C105296000E3DA3 /* Main.storyboard in Resources */,
@@ -607,6 +611,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NewsApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -623,6 +628,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NewsApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

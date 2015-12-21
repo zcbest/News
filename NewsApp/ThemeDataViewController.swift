@@ -38,9 +38,9 @@ class ThemeDataViewController: UIViewController {
 //        self.tableView.estimatedRowHeight = 80
     }
 
-    override func prefersStatusBarHidden() -> Bool {
-        return true
-    }
+//    override func prefersStatusBarHidden() -> Bool {
+//        return true
+//    }
     
     func getThemeData(url: String){
         Alamofire.request(.GET, url).responseJSON {response in

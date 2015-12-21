@@ -19,6 +19,6 @@
 
 -Step 7:侧栏菜单项的跳转返回以及解决侧栏菜单新闻详情cell的复用问题
 
--Step 8:右侧菜单栏添加我的github和我的博客连接
+-Step 8:右侧菜单栏添加我的github和我的博客链接
 
 ![App部分功能如下](http://img.blog.csdn.net/20151210104240897)   ![App功能二](http://img.blog.csdn.net/20151210104732078)   ![App功能三](http://img.blog.csdn.net/20151211162154407)   ![App功能四](http://img.blog.csdn.net/20151221150229561)

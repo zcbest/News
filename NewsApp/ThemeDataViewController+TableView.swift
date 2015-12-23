@@ -50,9 +50,20 @@ extension ThemeDataViewController: UITableViewDataSource,UITableViewDelegate{
                 tableView.registerNib(UINib(nibName: "ThemeDataTableViewCell", bundle: nil), forCellReuseIdentifier: initIdentifier)
                 cell = tableView.dequeueReusableCellWithIdentifier(initIdentifier) as? ThemeDataTableViewCell
             }
-            cell!.themeImageUrl.sd_setImageWithURL(NSURL(string: url))
-            cell?.themeLabel.text = self.item[indexPath.row].newsTitle
-            cell?.selectionStyle = UITableViewCellSelectionStyle.None
+            
+            let hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+            hud.labelText = "正在加载中，请稍候"
+            
+            dispatch_async(dispatch_get_global_queue(0, 0)) { () -> Void in
+                //利用SDWebImage异步加载图片
+                cell?.themeImageUrl.sd_setImageWithURL(NSURL(string: url))
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    cell?.themeLabel.text = self.item[indexPath.row].newsTitle
+                    cell?.selectionStyle = UITableViewCellSelectionStyle.None
+                    hud.hide(true)
+                    hud.removeFromSuperview()
+                })
+            }
             return cell!
         }
     }

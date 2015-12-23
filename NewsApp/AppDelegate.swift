@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = slideMenuController
         self.window?.makeKeyAndVisible()
         //设置启动页面停留的时间
-        NSThread.sleepForTimeInterval(1.0)
+        NSThread.sleepForTimeInterval(2.0)
         return true
     }
 

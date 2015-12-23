@@ -41,17 +41,24 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         }
         //进行cell的绘制
         let model = self.items1[indexPath.row]
-//        cell?.headerImage.image = UIImage(data: NSData(contentsOfURL: NSURL(string: model.newsImageName)!)!)
         
-        //利用SDWebImage异步加载图片
-        cell?.headerImage.sd_setImageWithURL(NSURL(string: model.newsImageName))
+        let hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+        hud.labelText = "正在加载中，请稍候"
+        dispatch_async(dispatch_get_global_queue(0, 0)) { () -> Void in
+            //利用SDWebImage异步加载图片
+            cell?.headerImage.sd_setImageWithURL(NSURL(string: model.newsImageName))
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                cell?.headerLabel.text = model.newsTitle
+                cell?.selectionStyle = UITableViewCellSelectionStyle.None
+                hud.hide(true)
+                hud.removeFromSuperview()
+            })
+        }
+//        cell?.headerImage.image = UIImage(data: NSData(contentsOfURL: NSURL(string: model.newsImageName)!)!)
         
         //图片圆角功能
 //        cell?.headerImage.layer.cornerRadius = 60
 //        cell?.headerImage.layer.masksToBounds = true
-        
-        cell?.headerLabel.text = model.newsTitle
-        cell?.selectionStyle = UITableViewCellSelectionStyle.None
         return cell!
     }
     
